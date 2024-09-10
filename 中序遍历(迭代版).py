@@ -15,7 +15,7 @@ class Solution:
             if p: #直接走到最左开始
                 st.append(p)
                 p = p.left
-            else: #然后按中-->右的顺序加入res 这个condition就类似谦虚前序的右
+            else: #p为null的时候的·回头·操作：按中-->右的顺序加入res 这个condition就类似谦虚前序的右
                 p = st.pop()
                 res.append(p.val)
                 p = p.right
